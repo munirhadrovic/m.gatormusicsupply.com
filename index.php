@@ -36,7 +36,7 @@
         <div class="container">
             
             <header>
-                <h1> <span>GatorMusic</span></h1>
+                <h1> <span><img src="first/img/logo.png" alt="LOGO"></span></h1>
 				<p class="codrops-demos">
 					
                     

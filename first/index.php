@@ -280,6 +280,20 @@
 					<div class="ui-block-a buttons-semir "><a class="ui-btn ui-icon-mail ui-btn-icon-left buttons-radius" href="#contactform" data-transition="<?php echo $transitionefect ?>">Contact Us</a></div>
 				</div>
 
+              <div class="dmContent" id="dm_content">
+                  <video class="dmNoMark" src="http://www.gatormusicsupply.com/wp-content/uploads/2014/11/gator-M-first-video-2mb.webm"
+                         width="100%"
+                         height="auto"
+
+
+                         controls="controls" autoplay="autoplay"
+                         loop="loop"
+                         muted="muted"
+                         id="1371612939">
+
+                  </video>
+              </div>
+
 		  </div>
 		
 
