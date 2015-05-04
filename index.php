@@ -36,7 +36,7 @@
         <div class="container">
             
             <header>
-                <h1> <span><img src="first/img/logo.png" alt="LOGO"></span></h1>
+                
 				<p class="codrops-demos">
 					
                     
@@ -93,6 +93,7 @@
 
                         </script>
                         <a href="first/index.php" class="findusdugme pading">Home</a>
+                        <h1> <span><img src="first/img/logo.png" alt="LOGO" style="width: 100%;"></span></h1>
 					
 				</p>
             </header>
