@@ -23,7 +23,7 @@
 }
 
 #header-image h1{
-    margin: 0px 0%;
+    margin: 0px 2%;
     padding: 0px 0px;
     margin-bottom: -3px;
 }
@@ -263,10 +263,12 @@ h3 {
   padding: 10px;
 }
 img {
-  padding-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-li img, h1 img, #brand img {
+li img, h1 img, #brand img, #awards img {
     padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 #menu-awards{
   display: none;
@@ -288,4 +290,13 @@ li img, h1 img, #brand img {
 }
 .ui-input-btn {
     line-height: 2em;
+}
+#brand img {
+    width: 100%;
+}
+#awards img {
+    width: 93%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }

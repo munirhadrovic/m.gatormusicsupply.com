@@ -315,8 +315,8 @@
 						</ul>
 					</section>
                     <h3> Gator Music Musical Instrument Store </h3>
-                    <p> Please contact our officiNaples best guitar shop! Sales, rentals, lessons and repairs. Come down and see Dave, Danny and Anthony for all your music needs.</strong> </p>
-	                <img src="img/logos.png" alt="" style=" padding-left: 60px;">
+                    <p> Please contact our officiNaples best guitar shop! Sales, rentals, lessons and repairs. Come down and see Dave, Danny and Anthony for all your music needs. </p>
+	                <img src="img/logos.png">
 
 
 				</div>
@@ -380,7 +380,7 @@
 					<h3>Who We Are In Short</h3>
 					<p>Naples best guitar shop! Sales, rentals, lessons and repairs. Come down and see Dave, Danny and Anthony for all your music needs.</p>
 					<h3>SEE OUR DETAILS </h3>
-					<img src="img/logos.png" alt="" style="padding-left: 60px;">
+					<img src="img/logos.png">
 					<p>We Are Gator Music Store and Supply</p>
 					<p>© Copyright MobileGrows.com
 						MobileGrows.com</p>
@@ -430,7 +430,6 @@
 							<li><a href="http://www.gatormusicsupply.com/blog/" rel="external" data-transition="<?php echo $transitionefect ?>">Blog</a></li>
 							<li><a href="#brand" data-transition="<?php echo $transitionefect ?>">Brands</a></li>
                           	 <li><a href="#awards" data-transition="<?php echo $transitionefect ?>">Awards</a></li>
-                      
 							<li><a href="#contactform" data-transition="<?php echo $transitionefect ?>">Contact Us</a></li>
 						</ul>
 					</section>
