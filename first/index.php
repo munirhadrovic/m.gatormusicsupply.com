@@ -137,7 +137,7 @@
 			
 		?>
 		<div id="header-image" data-role="header" data-theme="<?php echo $theme ?>" data-position="fixed">
-		    <h1><img src="img/logo.png" alt="LOGO"></h1>
+		    <h1><a href="#page1"><img src="img/logo.png" alt="LOGO"></a></h1>
 		</div>
 		<div data-role="footer" data-theme="<?php echo $theme ?>" data-position="fixed">
             <h1>Powered by <a href="http://www.mobilegrows.com" rel="external">MobileGrows</a> | <a href="http://www.gatormusicsupply.com/" rel="external">Desktop Site</a></h1>
@@ -199,9 +199,9 @@
 				    </ul>
 			    </div>
 			    <!-- Jssor Slider End -->
-				<fieldset class="ui-grid-a" data-theme="<?php echo $theme ?>">
+				<fieldset class="ui-grid-a bt" data-theme="<?php echo $theme ?>">
 					<!-- OVDJE SE UPISUJE BROJ TELEFONA KOJI TREBA POZVATI  -->
-					<div class="ui-block-a"><a class="ui-btn ui-icon-phone ui-btn-icon-left buttons-radius" href="tel:<?php echo $telephone ?>">Call US</a></div>
+					<div class="ui-block-a"><a href="tel:<?php echo $telephone ?>"><img src="img/pickcall.png" alt="Call"/></a></div>
 					<!-- ovdje se upisuje grad i adresa iz koje  -->
 					<div class="ui-block-b" id="findUS">
 						<script>
@@ -210,18 +210,18 @@
 								console.log("Android uslo");
 								var prostordugme=document.getElementById('findUS');
 								var dugme= document.createElement('a');
-								dugme.setAttribute('class', "ui-btn ui-icon-location ui-btn-icon-left buttons-radius");
+								dugme.setAttribute('class', "");
 								dugme.setAttribute('href',"geo:0,0?q=<?php echo $adresa; ?>,<?php echo $grad; ?>,<?php echo $skracenica; ?>");
-								dugme.innerHTML="Find US";
+								dugme.innerHTML="<img src='img/pickfind.png'/>";
 								prostordugme.appendChild(dugme);
 							}
 							else if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
 								console.log("Iphone ");
 								var prostordugme=document.getElementById('findUS');
 								var dugme= document.createElement('a');
-								dugme.setAttribute('class', "ui-btn ui-icon-location ui-btn-icon-left buttons-radius");
+								dugme.setAttribute('class', "");
 								dugme.setAttribute('href',"http://maps.google.com/?daddr=<?php echo $adresa; ?>,<?php echo $grad; ?>,<?php echo $skracenica; ?> ");
-								dugme.innerHTML="Find US";
+								dugme.innerHTML="<img src='img/pickfind.png'/>";
 								prostordugme.appendChild(dugme);
 							}
 							else if (ua.indexOf("BlackBerry") >= 0) {
@@ -229,18 +229,18 @@
 									console.log("Blakberu je prosao ")
 									var prostordugme=document.getElementById('findUS');
 									var dugme= document.createElement('a');
-									dugme.setAttribute('class', "ui-btn ui-icon-location ui-btn-icon-left buttons-radius");
+									dugme.setAttribute('class', "");
 									dugme.setAttribute('href',"javascript:blackberry.launch.newMap({'address':{'address1':'<?php echo $adresa; ?>,<?php echo $grad; ?>,<?php echo $skracenica; ?>'}});");
-									dugme.innerHTML="Find US";
+									dugme.innerHTML="<img src='img/pickfind.png'/>";
 									prostordugme.appendChild(dugme);
 									}		
 							else {
 								console.log("nije nigdje uslo default ")
 								var prostordugme=document.getElementById('findUS');
 								var dugme= document.createElement('a');
-								dugme.setAttribute('class', "ui-btn ui-icon-location ui-btn-icon-left buttons-radius");
+								dugme.setAttribute('class', "");
 								dugme.setAttribute('href',"geo:0,0?q=<?php echo $adresa; ?>,<?php echo $grad; ?>,<?php echo $skracenica; ?>");
-								dugme.innerHTML="Find US";
+								dugme.innerHTML="<img src='img/pickfind.png'/>";
 								prostordugme.appendChild(dugme);
 							}
 
@@ -258,26 +258,26 @@
 				</fieldset>
 			
 				<div class="ui-grid-solo" data-theme="<?php echo $theme ?>">
-					<div class="ui-block-a buttons-semir "><a class="ui-btn ui-icon-info ui-btn-icon-left buttons-radius" href="#home" data-transition="<?php echo $transitionefect ?>">Home</a></div>
+					<div class="ui-block-a buttons-semir "><a class="ui-btn ui-icon-home ui-btn-icon-left ui-nodisc-icon buttons-radius" href="#home" data-transition="<?php echo $transitionefect ?>">Home</a></div>
 				</div>
 
-			<div class="ui-grid-solo" data-theme="<?php echo $theme ?>">
-					<div class="ui-block-a buttons-semir "><a class="ui-btn ui-icon-info ui-btn-icon-left buttons-radius" href="#about" data-transition="<?php echo $transitionefect ?>">About Us</a></div>
+			    <div class="ui-grid-solo" data-theme="<?php echo $theme ?>">
+					<div class="ui-block-a buttons-semir "><a class="ui-btn ui-icon-user ui-btn-icon-left ui-nodisc-icon buttons-radius" href="#about" data-transition="<?php echo $transitionefect ?>">About Us</a></div>
 				</div>
 				<div class="ui-grid-solo" data-theme="<?php echo $theme ?>">
-					<div class="ui-block-a buttons-semir "><a class="ui-btn ui-icon-info ui-btn-icon-left buttons-radius" href="#blog" data-transition="<?php echo $transitionefect ?>">Blog</a></div>
+					<div class="ui-block-a buttons-semir "><a class="ui-btn ui-icon-cloud ui-btn-icon-left ui-nodisc-icon buttons-radius" href="http://www.gatormusicsupply.com/blog/" rel="external" data-transition="<?php echo $transitionefect ?>">Blog</a></div>
 				</div>
 				<div class="ui-grid-solo" data-theme="<?php echo $theme ?>">
-					<div class="ui-block-a buttons-semir "><a class="ui-btn ui-icon-info ui-btn-icon-left buttons-radius" href="#brand" data-transition="<?php echo $transitionefect ?>">Brands</a></div>
+					<div class="ui-block-a buttons-semir "><a class="ui-btn ui-icon-shop ui-btn-icon-left ui-nodisc-icon buttons-radius" href="#brand" data-transition="<?php echo $transitionefect ?>">Brands</a></div>
 				</div>
 					<div class="ui-grid-solo" data-theme="<?php echo $theme ?>">
-					<div class="ui-block-a buttons-semir "><a class="ui-btn ui-icon-info ui-btn-icon-left buttons-radius" href="#faq" data-transition="<?php echo $transitionefect ?>">Faq</a></div>
+					<div class="ui-block-a buttons-semir "><a class="ui-btn ui-icon-info ui-btn-icon-left ui-nodisc-icon buttons-radius" href="#faq" data-transition="<?php echo $transitionefect ?>">Faq</a></div>
 				</div>
 				<div class="ui-grid-solo" data-theme="<?php echo $theme ?>">
-					<div class="ui-block-a buttons-semir "><a class="ui-btn ui-icon-info ui-btn-icon-left buttons-radius" href="#awards" data-transition="<?php echo $transitionefect ?>">Awards</a></div>
+					<div class="ui-block-a buttons-semir "><a class="ui-btn ui-icon-star ui-btn-icon-left ui-nodisc-icon buttons-radius" href="#awards" data-transition="<?php echo $transitionefect ?>">Awards</a></div>
 				</div>
 				 <div class="ui-grid-solo" data-theme="<?php echo $theme ?>">
-					<div class="ui-block-a buttons-semir "><a class="ui-btn ui-icon-mail ui-btn-icon-left buttons-radius" href="#contactform" data-transition="<?php echo $transitionefect ?>">Contact Us</a></div>
+					<div class="ui-block-a buttons-semir "><a class="ui-btn ui-icon-mail ui-btn-icon-left ui-nodisc-icon buttons-radius" href="#contactform" data-transition="<?php echo $transitionefect ?>">Contact Us</a></div>
 				</div>
 
               <div class="dmContent" id="dm_content">
@@ -306,22 +306,18 @@
 				<div class="ui-grid-solo" data-theme="<?php echo $theme ?>">
 					<section id="navigation-menu-home">
 						<ul id="menu-home">
-							
 							<li><a href="#about" data-transition="<?php echo $transitionefect ?>">About US</a></li>
-							<li><a href="#blog" data-transition="<?php echo $transitionefect ?>">Blog</a></li>
+							<li><a href="http://www.gatormusicsupply.com/blog/" rel="external" data-transition="<?php echo $transitionefect ?>">Blog</a></li>
 							<li><a href="#brand" data-transition="<?php echo $transitionefect ?>">Brands</a></li>
                             <li><a href="#faq" data-transition="<?php echo $transitionefect ?>">Faq</a></li>
-                             <li><a href="#awards" data-transition="<?php echo $transitionefect ?>">Awards</a></li>
+                            <li><a href="#awards" data-transition="<?php echo $transitionefect ?>">Awards</a></li>
 							<li><a href="#contactform" data-transition="<?php echo $transitionefect ?>">Contact Us</a></li>
 						</ul>
 					</section>
                     <h3> Gator Music Musical Instrument Store </h3>
                     <p> Please contact our officiNaples best guitar shop! Sales, rentals, lessons and repairs. Come down and see Dave, Danny and Anthony for all your music needs.</strong> </p>
-	<img src="img/logos.png" alt="" style="
-    padding-left: 60px;">
+	                <img src="img/logos.png" alt="" style=" padding-left: 60px;">
 
-					 
-					
 
 				</div>
 
@@ -340,7 +336,7 @@
 						<ul id="menu-awards">
 							<li><a href="#home" data-transition="<?php echo $transitionefect ?>">Home</a></li>
 							<li><a href="#about" data-transition="<?php echo $transitionefect ?>">About US</a></li>
-							<li><a href="#blog" data-transition="<?php echo $transitionefect ?>">Blog</a></li>
+							<li><a href="http://www.gatormusicsupply.com/blog/" rel="external" data-transition="<?php echo $transitionefect ?>">Blog</a></li>
 							<li><a href="#brand" data-transition="<?php echo $transitionefect ?>">Brands</a></li>
                             <li><a href="#faq" data-transition="<?php echo $transitionefect ?>">Faq</a></li>
                       
@@ -353,26 +349,21 @@
 						<img src="img/slika5.jpg" alt="">
 						<img src="img/slika4.jpg" alt="">
 
-					 
-					
-
 				</div>
-
-			</div>	
-				
-				
+			</div>
 		</div>
 		
 	<!-- page awards end ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
 	<!-- page  about us ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-	<div id="about" data-role="page"  data-theme="<?php echo $theme ?>">
+	<div id="about" data-role="page" data-theme="<?php echo $theme ?>">
 			<div data-role="main" class="ui-content" data-theme="<?php echo $theme ?>">
 				<div class="ui-grid-solo" data-theme="<?php echo $theme ?>">
 					<section id="navigation-menu-about">
 						<ul id="menu-about">
 							<li><a href="#home" data-transition="<?php echo $transitionefect ?>">Home</a></li>
 						
-							<li><a href="#blog" data-transition="<?php echo $transitionefect ?>">Blog</a></li>
+							<li><a href="http://www.gatormusicsupply.com/blog/" rel="external" data-transition="<?php echo $transitionefect ?>">Blog</a></li>
 							<li><a href="#brand" data-transition="<?php echo $transitionefect ?>">Brands</a></li>
                             <li><a href="#faq" data-transition="<?php echo $transitionefect ?>">Faq</a></li>
                             <li><a href="#awards" data-transition="<?php echo $transitionefect ?>">Awards</a></li>
@@ -411,13 +402,13 @@
 						<ul id="menu-brand">
 							<li><a href="#home" data-transition="<?php echo $transitionefect ?>">Home</a></li>
 							<li><a href="#about" data-transition="<?php echo $transitionefect ?>">About US</a></li>
-								<li><a href="#blog" data-transition="<?php echo $transitionefect ?>">Blog</a></li>
+								<li><a href="http://www.gatormusicsupply.com/blog/" rel="external" data-transition="<?php echo $transitionefect ?>">Blog</a></li>
                             <li><a href="#faq" data-transition="<?php echo $transitionefect ?>">Faq</a></li>
                      		 <li><a href="#awards" data-transition="<?php echo $transitionefect ?>">Awards</a></li>
 							<li><a href="#contactform" data-transition="<?php echo $transitionefect ?>">Contact Us</a></li>
 						</ul>
 					</section>
-  <img src="	img/brands.jpg" alt="">
+                        <img src="img/brands.jpg">
 				</div>
 
 			</div>	
@@ -436,7 +427,7 @@
 						<ul id="menu-faq">
 							<li><a href="#home" data-transition="<?php echo $transitionefect ?>">Home</a></li>
 							<li><a href="#about" data-transition="<?php echo $transitionefect ?>">About US</a></li>
-							<li><a href="#blog" data-transition="<?php echo $transitionefect ?>">Blog</a></li>
+							<li><a href="http://www.gatormusicsupply.com/blog/" rel="external" data-transition="<?php echo $transitionefect ?>">Blog</a></li>
 							<li><a href="#brand" data-transition="<?php echo $transitionefect ?>">Brands</a></li>
                           	 <li><a href="#awards" data-transition="<?php echo $transitionefect ?>">Awards</a></li>
                       
@@ -480,13 +471,14 @@
 							<ul id="menu-contact">
                                <li><a href="#home" data-transition="<?php echo $transitionefect ?>">Home</a></li>
 							<li><a href="#about" data-transition="<?php echo $transitionefect ?>">About US</a></li>
-							<li><a href="#blog" data-transition="<?php echo $transitionefect ?>">Blog</a></li>
+							<li><a href="http://www.gatormusicsupply.com/blog/" rel="external" data-transition="<?php echo $transitionefect ?>">Blog</a></li>
 							<li><a href="#brand" data-transition="<?php echo $transitionefect ?>">Brands</a></li>
                             <li><a href="#faq" data-transition="<?php echo $transitionefect ?>">Faq</a></li>
                              <li><a href="#awards" data-transition="<?php echo $transitionefect ?>">Awards</a></li>
 							</ul>
 					</section>	
 					<div>
+                        <h2>Contact Us</h2>
 						<form data-parsley-validate method="post" action="mail.php" data-ajax="false">
 							Name: <input type="text" id="naam" name="naam" value="" placeholder="Name" required/>
 							E-mail: <input type="email" id="mail" name="mail" value="" placeholder="E-mail" required/>
@@ -494,7 +486,7 @@
 							Subject: <input type="text" id="onderwerp" name="onderwerp" value="" placeholder="Subject" required/>
 							Message:
 							<textarea style="height:100px;" id="bericht" name="bericht" placeholder="Enter your message here..." required></textarea>
-							<input type="submit" value="Send" name="submit" class="btn">
+							<input type="submit" value="Submit" name="submit" class="btn">
 						</form>
 					</div>
 				</div>

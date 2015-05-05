@@ -30,7 +30,7 @@
 div#page1 {
     padding: 0px 0px;
     padding-bottom: 0px;
-}}
+}
 #menu {
   display:none;
 }
@@ -69,7 +69,7 @@ div#page1 {
 	padding: 0px 3%;		
 }
 .buttons-radius{
-	border-radius:5px;
+	border-radius:4px;
 }
 input#contact-submit-dugme {
   margin-right: 0px !important;
@@ -214,7 +214,7 @@ input#contact-submit-dugme {
 .callbacks_nav {
   position: absolute;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  top: 25%;
+  top: 11em;
   left: 0;
   opacity: 0.7;
   z-index: 3;
@@ -263,7 +263,10 @@ h3 {
   padding: 10px;
 }
 img {
-  padding-left: 2px;
+  padding-left: 10px;
+}
+li img, h1 img, #brand img {
+    padding-left: 0 !important;
 }
 #menu-awards{
   display: none;
@@ -276,4 +279,13 @@ img {
 }
 #menu-faq{
   display: none;
+}
+.ui-grid-a {
+    text-align: center;
+}
+.bt {
+    border-top: 5px solid #3F3E29 !important;
+}
+.ui-input-btn {
+    line-height: 2em;
 }

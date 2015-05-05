@@ -737,7 +737,9 @@ button,
 .ui-btn {
 	font-size: 1em;
 	line-height: 1;
-	font-family: sans-serif /*{global-font-family}*/;
+	font-family: Georgia /*{global-font-family}*/;
+    font-style: italic;
+    text-shadow: none !important;
 }
 legend,
 .ui-input-text input,
@@ -858,8 +860,7 @@ label.ui-btn {
 .ui-btn-icon-top:after,
 .ui-btn-icon-bottom:after,
 .ui-btn-icon-notext:after {
-	background-color: 					#666 /*{global-icon-color}*/;
-	background-color: 					rgba(0,0,0,.3) /*{global-icon-disc}*/;
+
 	background-position: center center;
 	background-repeat: no-repeat;
 	-webkit-border-radius: 1em;
@@ -1143,7 +1144,7 @@ html .ui-panel-page-container-b {
 html .ui-bar-b a,
 html .ui-body-b a,
 html body .ui-group-theme-b a {
-	color:#3F3E29/*{b-link-color}*/;
+	color:#E58827/*{b-link-color}*/;
 	/*font-weight: bold;*/
 }
 .ui-page-theme-b a:visited,
@@ -1156,13 +1157,13 @@ html body .ui-group-theme-b a:visited {
 html .ui-bar-b a:hover,
 html .ui-body-b a:hover,
 html body .ui-group-theme-b a:hover {
-	color: #3F3E29 /*{b-link-hover}*/;
+	color: #E58827 /*{b-link-hover}*/;
 }
 .ui-page-theme-b a:active,
 html .ui-bar-b a:active,
 html .ui-body-b a:active,
 html body .ui-group-theme-b a:active {
-	color: #3F3E29 /*{b-link-active}*/;
+	color: #E58827 /*{b-link-active}*/;
 }
 /* Button up */
 .ui-page-theme-b .ui-btn,
@@ -1182,8 +1183,7 @@ html head + body .ui-btn.ui-btn-b:visited {
 /*	background: -moz-linear-gradient(#0727091, rgb(2, 54, 114)); /* For Firefox 3.6 to 15 */
 	/*background: linear-gradient(#0727091, rgb(2, 54, 114)); /* Standard syntax */
 	border-color:	 		#3F3E29/*{b-bup-border}*/;
-	color: 				#fff; /*{b-bup-color}*/;
-	/*text-shadow: 0 /*{b-bup-shadow-x}*/ 1px /*{b-bup-shadow-y}*/ 0 /*{b-bup-shadow-radius}*/ #111 /*{b-bup-shadow-color}*/;
+	color: 				#E58827; /*{b-bup-color}*/;
 }
 /* Button hover */
 .ui-page-theme-b .ui-btn:hover,
@@ -1234,7 +1234,6 @@ html body div.ui-slider-track.ui-body-b .ui-btn-active {
 	background-color: 		#3F3E29/*{b-active-background-color}*/;
 	border-color:	 		#3F3E29/*{b-active-border}*/;
 	color: 					#fff /*{b-active-color}*/;
-	/*text-shadow: 0 /*{b-active-shadow-x}*/ 1px /*{b-active-shadow-y}*/ 0 /*{b-active-shadow-radius}*/ #0088bb /*{b-active-shadow-color}*/;
 }
 /* Active radio button icon */
 .ui-page-theme-b .ui-radio-on:after,

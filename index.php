@@ -92,7 +92,7 @@
                             // }
 
                         </script>
-                        <a href="first/index.php" class="findusdugme pading">Home</a>
+                        <a href="first/index.php" class="findusdugme pading"><img src="images/home.png" alt="Home" style="float:left;"><p style="margin-top: 14px;;">Home</p></a>
                         <h1> <span><img src="first/img/logo.png" alt="LOGO" style="width: 100%;"></span></h1>
 					
 				</p>
