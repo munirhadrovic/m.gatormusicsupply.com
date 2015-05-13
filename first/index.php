@@ -3,7 +3,7 @@
 	<head>
         <title>GatorMusic</title>
 		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
-
+        <meta charset="UTF-8"/>
 		<script src="js/jquery-1.11.2.js"></script>
 		<script>
 		    $(document).on("mobileinit", function(evt) {
